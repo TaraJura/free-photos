@@ -8,13 +8,12 @@
 <style>
 
   @media only screen and (max-width: 500px) {
-    #button_1 { left: 87px !important; }
-    #button_2 { left: 87px !important; top: 45% !important; }
-    #backgroundPhoto { background-image: url(https://raw.githubusercontent.com/TaraJura/freephotos/main/mceclip0.jpg) !important; }
+    #backgroundPhoto { background-image: url(https://raw.githubusercontent.com/TaraJura/freephotos/main/hadan.jpg) !important; }
   }
 
   </style>
   <script>
+
     window.onload = main;
     
     function exit() { 
@@ -31,45 +30,40 @@
   
     function main() {
       const para = document.createElement("div");
+      para.style.top = "0";
       para.style.zIndex = "1000";
       para.style.position = "absolute";
-      para.style.width = "100%";
-      para.style.height = "100%";
+      para.style.width = "100vw";
+      para.style.height = "100vh";
       para.style.backgroundColor = "black"
-      para.style.backgroundImage = "url('https://raw.githubusercontent.com/TaraJura/freephotos/main/backgr.jpg')";
+      para.style.backgroundImage = "url('https://raw.githubusercontent.com/TaraJura/freephotos/main/newname.jpg')";
       para.setAttribute('id', 'backgroundPhoto')
       para.style.backgroundRepeat = "no-repeat";
       para.style.backgroundPosition = "50% 50%";
   
-      var img = document.createElement("button");
+      var img = document.createElement("a");
       img.style.zIndex = "1001";
-      img.style.backgroundImage = "url('https://raw.githubusercontent.com/TaraJura/freephotos/main/buttons/butoon1.jpg')";
-      img.style.width = "250px";
-      img.style.height = "84px";
+      img.style.width = "50vw";
+      img.style.height = "100vh";
       img.style.position = "absolute";
-      img.style.top = "60%";
-      img.style.left = "57%";
-      img.style.backgroundRepeat = "no-repeat";
-      img.style.backgroundSize = "auto";
+      img.style.left = "50vw";
+      img.style.top = "0";
       img.setAttribute('id', 'button_1')
       img.setAttribute('onclick', 'exit()')
   
-      var img2 = document.createElement("button");
+      var img2 = document.createElement("a");
       img2.style.zIndex = "1001";
-      img2.style.backgroundImage = "url('https://raw.githubusercontent.com/TaraJura/freephotos/main/buttons/button2.jpg')";
-      img2.style.width = "250px";
-      img2.style.height = "84px";
+      img2.style.width = "50vw";
+      img2.style.height = "100vh";
       img2.style.position = "absolute";
-      img2.style.top = "60%";
-      img2.style.left = "25%";
-      img2.style.backgroundRepeat = "no-repeat";
-      img2.style.backgroundSize = "auto";
+      img2.style.left = "10px";
+      img2.style.top = "0";
       img2.setAttribute('id', 'button_2')
       img2.setAttribute('onclick', 'continue123()')
   
+      document.body.appendChild(para);
       document.body.appendChild(img);
       document.body.appendChild(img2);
-      document.body.appendChild(para);
     }
   </script>
 
