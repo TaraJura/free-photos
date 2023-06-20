@@ -1,0 +1,9 @@
+(-) nepíšou commit messages
+(-) ignorují chyby v pipeline, mergují i přes nefunkční pipeline. (přitom se jedná o projekt na zelené louce)
+(+-) staví to na šabloně čajového eshopu ? (už od začátku se můžou mít tendenci ohýbat předchozí řešení)
+(+) zvolení šablony podobné předchozímu designu, hezký front-end (bootstrap 4)
+(+) vícejazyčnost (používají locales a většinou nehardcodují text do kódu)
+(+) Responzivni web, mobilni nahled vypadá funkčně
+(+) Customizace překladů + emailových šablon
+(+) Mají čistou JavaScript console (žádné chyby)
+(-) Používají jQuery
